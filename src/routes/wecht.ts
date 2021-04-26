@@ -1,9 +1,9 @@
 import express from 'express';
+import _ from 'lodash';
 const router = express.Router();
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('index', { title: 'Express' });
 });
 
 export default router;
